@@ -2,7 +2,7 @@
 ## final project improving una-building-matching-game
 focusing on remeding:
 repo
--not everything needs to be in docs/ 
+-not everything needs to be in a docs folder 
 -can have scripts/ styles/ pages/ images/ in the root folder (next to index.html)
 readme
 -missing code block,
