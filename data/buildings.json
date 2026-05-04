@@ -1,0 +1,22 @@
+[
+  {"name": "Collier Library", "image": "collier-library.png"},
+  {"name": "601 Cramer Way", "image": "cramer.jpg"},
+  {"name": "Communication Building", "image": "communication-building.png"},
+  {"name": "Math and Computing", "image": "math-and-computing.png"},
+  {"name": "East Campus", "image": "east-campus.png"},
+  {"name": "Theatre", "image": "theatre.png"},
+  {"name": "Keller Hall", "image": "keller.png"},
+  {"name": "Kilby School", "image": "kilby.png"},
+  {"name": "Laura M. Harrison Hall and Anderson College of Nursing", "image": "nursing.png"},
+  {"name": "McKinney Center", "image": "mckinney-center.png"},
+  {"name": "Mitchell Burford Science and Technology", "image": "science-and-technology.png"},
+  {"name": "Music Building", "image": "music.png"},
+  {"name": "Norton Auditorium", "image": "norton.png"},
+  {"name": "Planetarium and Observatory", "image": "planetarium.png"},
+  {"name": "Powers Hall", "image": "powers.png"},
+  {"name": "Stone Lodge", "image": "stone-lodge.png"},
+  {"name": "Student Publications", "image": "publications.png"},
+  {"name": "Visual Arts Building", "image": "arts.png"},
+  {"name": "Willingham Hall", "image": "willingham.png"},
+  {"name": "Wesleyan Hall", "image": "wesleyan.png"}
+]

@@ -1,22 +1,12 @@
-const jsArrayData = [
-  "Collier Library",
-  "601 Cramer Way",
-  "Communication Building",
-  "Math and Computing",
-  "East Campus",
-  "Theatre",
-  "Keller Hall",
-  "Kilby School",
-  "Laura M. Harrison Hall and Anderson College of Nursing",
-  "McKinney Center",
-  "Mitchell Burford Science and Technology",
-  "Music Building",
-  "Norton Auditorium",
-  "Planetarium and Observatory",
-  "Powers Hall",
-  "Stone Lodge",
-  "Student Publications",
-  "Visual Arts Building",
-  "Willingham Hall",
-  "Wesleyan Hall"
-];
+let buildings = [];
+
+async function loadBuildings() {
+  try {
+    const response = await fetch('../data/buildings.json');
+    buildings = await response.json();
+  } catch (error) {
+    console.error('Error loading buildings:', error);
+  }
+}
+
+export { buildings, loadBuildings };
