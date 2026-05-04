@@ -27,48 +27,35 @@ function shuffle(array){
  return array.sort(()=>Math.random()-0.5);
 }
 
-function loadQuestion(){
+function loadQuestion() {
+  console.log('Loading new question');
+  const current = locations[Math.floor(Math.random() * locations.length)];
+  currentAnswer = current.name;
+  document.getElementById('quizImage').src = current.img;
 
- // pick random building
- const current = locations[Math.floor(Math.random()*locations.length)];
- currentAnswer = current.name;
+  const wrong = shuffle(locations.filter(l => l.name !== current.name)).slice(0, 2).map(l => l.name);
+  const choices = shuffle([current.name, ...wrong]);
 
- // load image
- document.getElementById("quizImage").src = current.img;
+  const buttons = document.querySelectorAll('.answer');
+  buttons.forEach((btn, i) => {
+    btn.textContent = choices[i];
+  });
 
- // create answer choices
- const wrong = shuffle(
-   locations.filter(l => l.name !== current.name)
- ).slice(0,2).map(l => l.name);
-
- const choices = shuffle([current.name, ...wrong]);
-
- // put names on buttons
- const buttons = document.querySelectorAll(".answer");
-
- buttons.forEach((btn,i)=>{
-   btn.textContent = choices[i];
-
-   btn.onclick = function(){
-     checkAnswer(choices[i]);
-   };
- });
-
- document.getElementById("result").textContent="";
+  document.getElementById('result').textContent = '';
 }
 
-function checkAnswer(choice){
-
- const result = document.getElementById("result");
-
- if(choice === currentAnswer){
-   result.textContent = "Correct!";
-   result.style.color = "green";
- } else {
-   result.textContent = "Incorrect! Correct answer: " + currentAnswer;
-   result.style.color = "red";
- }
-
+function checkAnswer(choice) {
+  console.log('Answer selected:', choice);
+  const result = document.getElementById('result');
+  if (choice === currentAnswer) {
+    result.textContent = 'Correct!';
+    result.style.color = 'green';
+    console.log('Correct answer');
+  } else {
+    result.textContent = 'Incorrect! Correct answer: ' + currentAnswer;
+    result.style.color = 'red';
+    console.log('Incorrect answer');
+  }
 }
 
 loadQuestion(); 

@@ -1,34 +1,56 @@
-# final-cis-376
+# UNA Building Matching Game
 
+> An interactive web app for matching UNA campus building names to their images, with search and game features.
 
-## final project improving una-building-matching-game
-This final project focuses on the UNA building matching game honors project and improving the usability, document structure, and project as a whole so that students can learn the buildings here at UNA!
+https://github.com/carinanestrada/final-cis-376
 
+This app helps users familiarize themselves with UNA's campus buildings through an interactive matching game and search functionality. I chose to improve this project because it combines education with fun gameplay. I built it from scratch using HTML, CSS, and JavaScript, focusing on clean code and user experience. The development involved structuring data, implementing game logic, and ensuring responsive design.
 
+## Attribution
+- Libraries: Bootstrap, Normalize.css
+- Tutorials: MDN Web Docs, W3Schools
+- Code sources: Bootstrap documentation
+- AI usage: GitHub Copilot for code suggestions and project structure image
+- Icons/Images: UNA campus photos (public domain)
 
+## Project Structure
+```
+.
+├── index.html
+├── README.md
+├── images/
+│   ├── collier-library.png
+│   ├── cramer.jpg
+│   └── ... (other building images)
+├── pages/
+│   ├── about.html
+│   └── game.html
+├── scripts/
+│   ├── data.js
+│   ├── game-lib.js
+│   ├── search-logic.js
+│   ├── search.js
+│   └── session-login.js
+└── styles/
+    └── styles.css
+```
 
-repo link
-https://github.com/carinanestrada/final-cis-376/
+## Code Highlight
+```javascript
+// From scripts/game-lib.js - loads a random question for the matching game
+function loadQuestion() {
+  const randomIndex = Math.floor(Math.random() * buildings.length);
+  const building = buildings[randomIndex];
+  document.getElementById('quizImage').src = `../images/${building.image}`;
+  // Sets up answer buttons with correct and incorrect options
+}
+```
+This function selects a random building from the data array, displays its image, and prepares multiple-choice answers. It's key for the game's interactivity and ensures each question is unique.
 
+## Validation
+Nu Validator Results: https://validator.w3.org/nu/?doc=https%3A%2F%2Fcarinanestrada.github.io%2Funa-building-matching-game%2F
+WAVE Accessibility: https://wave.webaim.org/report#/https://carinanestrada.github.io/una-building-matching-game/
 
-
-focusing on remeding:
-repo
--not everything needs to be in a docs folder 
--can have scripts/ styles/ pages/ images/ in the root folder (next to index.html)
-readme
--missing code block,
--need some more .md formatting (big block of websites, no links) inspiration? 
-app
--app links open in new windows (about & game)
--login checks for pwd but doesn't go anywhere or change state to logout needs to get some bootstrap & update the style, e.g., in about a centered list with bullets all left-aligned
-code
-- some inline scripting
-- lotta html when can use data for list items
-- normalize in index AND in styles, just use the latter. 
-profile
--no GitHub profile with project highlighted. 
-
-
-
-Bonus: check out my linkedin profile! www.linkedin.com/in/carinaestrada
+### Links
+Github repo link: https://github.com/carinanestrada/final-cis-376 
+Bonus: check out my linkedin profile! www.linkedin.com/in/carinaestrada 
