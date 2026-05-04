@@ -63,7 +63,7 @@ function loadQuestion() {
 The function above selects a random building from the fetched JSON data array and sets it as the current answer then it displays its image and generates three incorrect options, it also shuffles all choices, and assigns them to answer the button. It is important because it enables the core quiz part of the functionality, ensuring random questions each time. It works by using array methods for filtering and shuffling, DOM manipulation to update the UI, and relies on the buildings data loaded via a fetch API.
 
 ## Validation
-Nu Validator Results: https://carinanestrada.github.io/final-cis-376/
+Nu Validator Results: https://validator.nu/?doc=https%3A%2F%2Fcarinanestrada.github.io%2Ffinal-cis-376%2F+
 WAVE Accessibility: https://wave.webaim.org/report#/https://carinanestrada.github.io/final-cis-376/
 
 ## Future Improvements
