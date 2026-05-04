@@ -67,7 +67,7 @@ Nu Validator Results: https://validator.nu/?doc=https%3A%2F%2Fcarinanestrada.git
 WAVE Accessibility: https://wave.webaim.org/report#/https://carinanestrada.github.io/final-cis-376/
 
 ## Future Improvements
-Sprint 99 would include adding more of UNA's buildings like residence halls, as well as a map function where they could drag and drop names onto buildings! https://github.com/carinanestrada/final-cis-376/milestone/1 
+Sprint 99 would include adding more of UNA's buildings like residence halls, as well as a map function where they could drag and drop names onto buildings! https://github.com/carinanestrada/final-cis-376/issues/1
 
 ### Links
 Github repo link: https://github.com/carinanestrada/final-cis-376
